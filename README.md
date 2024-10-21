@@ -37,6 +37,8 @@ observed_sequence = np.array([1,1,1,0,0,1])
 alpha = np. zeros ((len(observed_sequence) ,len (initial_probabilities) ) )
 # Calculate the first row of the alpha matrix
 alpha [0,:] = initial_probabilities *emission_matrix[:, observed_sequence [0]]
+```
+```
 
 # Loop through the rest of the observed sequence and calculate the rest of the alpha matrix
 for t in range (1, len (observed_sequence) ) :
